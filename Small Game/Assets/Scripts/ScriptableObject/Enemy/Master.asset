@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0343120f0fd7cda469e8596c719f96f7, type: 3}
+  m_Name: Master
+  m_EditorClassIdentifier: 
+  isFighter: 0
+  isShooter: 1
+  Speed: 5
+  AttackRange: 10
+  HP: 100
+  SightRange: 20
+  Points: 0
+  BulletPrefab: {fileID: 0}
+  FixShootingIssue: 0
+  fireForce: 0
+  TimeBetweenShots: 0
+  ShootingDamage: 0
+  SpreadAngle: 0
+  BulletPerShot: 0
+  FixDashingIssue: 0
+  MeleeDamage: 0
+  TimeBetweenDash: 0
+  DashForce: 0
+  DashTime: 0
+  TimeBetweenAttack: 0

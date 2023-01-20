@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Bullet
+  - BackGround
+  - Border
+  - Gun
+  - Enemy
+  - PatrolPointList
+  - PointsCounter
+  - CameraEffect
+  - Spawner
+  - SystemSound
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - BackGround
+  - Water
+  - UI
+  - Player
+  - Border
+  - Icon
+  - DistortionEffect
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: BackGround
+    uniqueID: 215491911
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 317335679
+    locked: 0
+  - name: Distor
+    uniqueID: 3017035383
+    locked: 0

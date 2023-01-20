@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0343120f0fd7cda469e8596c719f96f7, type: 3}
+  m_Name: RedCircleWithShotgun
+  m_EditorClassIdentifier: 
+  isFighter: 0
+  isShooter: 1
+  Speed: 5
+  AttackRange: 11
+  HP: 90
+  SightRange: 20
+  Points: 40
+  BulletPrefab: {fileID: 8615656790048313630, guid: 146b888534bc1e547b86df31f47c56ff, type: 3}
+  FixShootingIssue: 1
+  fireForce: 800
+  TimeBetweenShots: 1.24
+  ShootingDamage: 21
+  SpreadAngle: 65
+  BulletPerShot: 8
+  FixDashingIssue: 0
+  MeleeDamage: 0
+  TimeBetweenDash: 0
+  DashForce: 0
+  DashTime: 0
+  TimeBetweenAttack: 0
