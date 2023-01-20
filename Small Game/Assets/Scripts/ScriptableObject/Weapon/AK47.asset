@@ -18,4 +18,4 @@ MonoBehaviour:
   TimeBetweenShots: 0.4
   SpreadAngle: 0
   BulletPerShot: 1
-  Damage: 25
+  Damage: 30

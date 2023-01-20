@@ -34,6 +34,7 @@ public class Enemy : MonoBehaviour
     //sound
     AudioSource audioSource;
     AudioClip Argh;
+    AudioClip EnemyDie;
     void Start()
     {
         Target = GameObject.FindWithTag("Player").GetComponent<Transform>();
@@ -52,6 +53,7 @@ public class Enemy : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         Argh = Resources.Load<AudioClip>("EnemyHurt");
         audioSource.volume = 1f;
+        EnemyDie = Resources.Load<AudioClip>("EnemyDie");
     }
    void Update()
    {    
@@ -79,6 +81,7 @@ public class Enemy : MonoBehaviour
                 //gives player points
                 PointCounterInstance.AddScore(CurrentEnemyData.Points);
                 Instantiate(DeadParticle, transform.position, Quaternion.identity);
+                audioSource.PlayOneShot(EnemyDie);
                 Destroy(gameObject, 0.005f);
             }
         }

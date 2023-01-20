@@ -7,13 +7,13 @@ public class EffectController : MonoBehaviour
 {
     Volume volume;
     Vignette vignette;
-
+    Bloom bloom;
     [HideInInspector] public bool IsBlind = false;
     private void Start() {
         volume = gameObject.GetComponent<Volume>();
         volume.profile.TryGet<Vignette>(out vignette);
+        volume.profile.TryGet<Bloom>(out bloom);
     }
-
     private void Update() {
         if(IsBlind)
         {
@@ -22,6 +22,14 @@ public class EffectController : MonoBehaviour
         if(!IsBlind)
         {
             vignette.active = false;
+        }
+        if(GameScreen.AllowBloom)
+        {
+            bloom.active = true;
+        }
+        if(!GameScreen.AllowBloom)
+        {
+            bloom.active = false;
         }
     }
 }

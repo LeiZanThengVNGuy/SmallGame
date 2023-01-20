@@ -6,6 +6,20 @@ public class GameScreen : MonoBehaviour
 {
     AudioSource SystemAudioSource;
     public static AudioClip ClickSound;
+    int PlayerChoice;
+    public static bool AllowBloom = true;
+    public Toggle BloomSettingTick;
+    private void Awake() {
+        PlayerChoice = PlayerPrefs.GetInt("PlayerChoice");
+        if(PlayerChoice == 0)
+        {
+            AllowBloom = false;
+        }
+        if(PlayerChoice == 1)
+        {
+            AllowBloom = true;
+        }
+    }
     private void Start() {
         SystemAudioSource = GameObject.FindGameObjectWithTag("SystemSound").GetComponent<AudioSource>();
         ClickSound = Resources.Load<AudioClip>("Click");
@@ -38,5 +52,33 @@ public class GameScreen : MonoBehaviour
     {
         SystemAudioSource.PlayOneShot(ClickSound);
         Application.Quit();
+    }
+    public void LoadSettingScreen()
+    {
+        gameObject.SetActive(true);
+        if(!AllowBloom)
+        {
+            BloomSettingTick.isOn = false;
+        }
+        if(AllowBloom)
+        {
+            BloomSettingTick.isOn = true;
+        }
+    }
+    public void BloomSetting(bool BloomBool)
+    {
+        AllowBloom = BloomBool;
+        if(BloomBool == false)
+        {
+            PlayerPrefs.SetInt("PlayerChoice", 0);
+        }
+        if(BloomBool == true)
+        {
+            PlayerPrefs.SetInt("PlayerChoice", 1);
+        }
+    }
+    public void ResumeMainMenu()
+    {
+        gameObject.SetActive(false);
     }
 }

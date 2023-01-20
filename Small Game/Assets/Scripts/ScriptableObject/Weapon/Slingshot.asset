@@ -15,7 +15,7 @@ MonoBehaviour:
   FixShootingIssue: 1
   Bullet: {fileID: 3197215143816084930, guid: 484da58ee04c82c43a8bbc20c7fc53e7, type: 3}
   fireForce: 500
-  TimeBetweenShots: 0.5
+  TimeBetweenShots: 0.3
   SpreadAngle: 0
   BulletPerShot: 1
-  Damage: 15
+  Damage: 17.3

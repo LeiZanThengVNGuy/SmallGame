@@ -24,7 +24,7 @@ MonoBehaviour:
   fireForce: 800
   TimeBetweenShots: 1.24
   ShootingDamage: 21
-  SpreadAngle: 65
+  SpreadAngle: 50
   BulletPerShot: 8
   FixDashingIssue: 0
   MeleeDamage: 0
